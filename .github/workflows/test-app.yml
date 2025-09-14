@@ -2,7 +2,7 @@ name: start app
 
 on:
   push:
-    branches: [test, master]
+    branches: [test, master, main]
 env:
   DOCKERHUB_USER: ${{ secrets.DOCKERHUB_USERNAME }}
   DOCKERHUB_REPO: ${{ secrets.DOCKERHUB_USERNAME }}/api-gateway
